@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a353408e5f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Prompt:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="nav-bar" class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+                    <title>Proton</title>
+                    <path d="M2.474 17.75V24h4.401v-5.979c0-.582.232-1.14.645-1.551a2.204 2.204 0 0 1 1.556-.643h4.513a7.955 7.955 0 0 0 5.612-2.318 7.907 7.907 0 0 0 2.325-5.595 7.91 7.91 0 0 0-2.325-5.596A7.958 7.958 0 0 0 13.587 0H2.474v7.812h4.401V4.129h6.416c.995 0 1.951.394 2.656 1.097.704.7 1.1 1.653 1.101 2.646a3.742 3.742 0 0 1-1.101 2.648 3.766 3.766 0 0 1-2.656 1.097H8.627a6.158 6.158 0 0 0-4.352 1.795 6.133 6.133 0 0 0-1.801 4.338Z"/>
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span>&#9776;</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="label-text">Computer Science Student</p>
+                    <h1>Hi, I'm<br><span class="name-highlight">John Paul</span></h1>
+                    <p class="about-desc">I am a Bachelor of Science in Computer Science student who is eager to learn, grow, and gain new experiences. I value continuous improvement, creativity, and dedication in everything I do.</p>
+                    <p class="about-desc">Through my academic journey and personal experiences, I continue to develop my skills and broaden my knowledge for future opportunities.</p>
+                    <a href="Documents/resume.pdf" class="resume-btn" target="_blank">Download Resume</a>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="https://api.dicebear.com/9.x/lorelei/svg?eyes=variant21&hair=variant12&glasses=variant04&glassesProbability=100&mouth=happy02&backgroundColor=345c72" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <p class="label-text text-center">What I've Built</p>
+            <h2 class="section-title text-center">Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Images/POS.png" alt="POS System">
+                    </div>
+                    <div class="project-info">
+                        <h3>POS System</h3>
+                        <p>A Point of Sale system with a CSGO theme for processing sales transactions. Adds items, computes totals, and sends receipts to Gmail automatically.</p>
+                        <a href="https://github.com/Shinuinuby/POS-CSGO-theme" target="_blank" class="project-link">View Source Code →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Images/VehicleRental.png" alt="Vehicle Rental System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Vehicle Rental System</h3>
+                        <p>A CRUD system for managing vehicle information — add, view, update, and remove vehicle records with ease.</p>
+                        <a href="https://github.com/Shinuinuby/Vehicle-Rental-Management-System" target="_blank" class="project-link">View Source Code →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Images/SmartQueue.png" alt="Smart Queue System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Smart Queue System</h3>
+                        <p>A queue management system that assigns numbers, tracks position in line, and helps serve customers in an orderly manner.</p>
+                        <a href="https://github.com/Shinuinuby/SmartQueue" target="_blank" class="project-link">View Source Code →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates">
+        <div class="container">
+            <p class="label-text text-center">Credentials</p>
+            <h2 class="section-title text-center">Certificates</h2>
+
+            <div class="accordion" id="certAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert-one">
+                            Technical Skills
+                        </button>
+                    </h2>
+                    <div id="cert-one" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="cert-list">
+                                <li><span>HyperText Markup Language</span><a href="Documents/HTMLEssentialsv120260314-33-4poa1c.pdf" target="_blank">View Certificate</a></li>
+                                <li><span>Cascade Style Sheets</span><a href="Documents/CSSEssentialsv120260402-31-sje0ht.pdf" target="_blank">View Certificate</a></li>
+                                <li><span>Cisco Packet Tracer</span><a href="Documents/Exploring_IoT_with_Cisco_Packet_Tracer_certificate.pdf" target="_blank">View Certificate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert-two">
+                            Professional Skills
+                        </button>
+                    </h2>
+                    <div id="cert-two" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="cert-list">
+                                <li><span>Engaging Stakeholders for Success</span><a href="Documents/Engaging_Stakeholders_for_Success_certificate.pdf" target="_blank">View Certificate</a></li>
+                                <li><span>Creating Compelling Reports</span><a href="Documents/Creating_Compelling_Reports_certificate.pdf" target="_blank">View Certificate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert-three">
+                            Productivity Tools
+                        </button>
+                    </h2>
+                    <div id="cert-three" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="cert-list">
+                                <li><span>Microsoft Word</span><a href="Documents/Word 2016 certification.pdf" target="_blank">View Certificate</a></li>
+                                <li><span>Microsoft Excel</span><a href="Documents/Excel 2016 certification.pdf" target="_blank">View Certificate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cert-four">
+                            Safety & First Aid
+                        </button>
+                    </h2>
+                    <div id="cert-four" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="cert-list">
+                                <li><span>First Aid 103-01</span><a href="Documents/First aid.pdf" target="_blank">View Certificate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section id="contacts">
+        <div class="container">
+            <p class="label-text text-center">Get In Touch</p>
+            <h2 class="section-title text-center">Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-block">
+                    <h6>Location & Phone</h6>
+                    <p>Dasmariñas City, Cavite Philippines</p>
+                    <p>+63 992 4277 290<br>+63 976 0016 530</p>
+                </div>
+                <div class="contact-block">
+                    <h6>Connect With Me</h6>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/johnpaul.lintag.7" target="_blank" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&to=johnpaul.lintag@cvsu.edu.ph" target="_blank" title="Email">
+                            <i class="fa-solid fa-at"></i>
+                        </a>
+                        <a href="https://github.com/Shinuinuby" target="_blank" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-block">
+                    <h6>About This Site</h6>
+                    <p>Designed and developed for educational purposes.</p>
+                    <p class="copyright">© 2026 John Paul Lintag</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
